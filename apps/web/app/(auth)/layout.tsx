@@ -1,9 +1,5 @@
-const Layout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className="min-h-screen h-full min-w-screen flex flex-col items-center justify-center">
-      {children}
-    </div>
-  );
-};
+import { AuthLayout } from "@/app/modules/auth/ui/layouts/auth-layout";
 
-export default Layout;
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return <AuthLayout>{children}</AuthLayout>;
+}
